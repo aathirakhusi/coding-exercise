@@ -8,7 +8,7 @@ namespace CodingChallenge
 {
     public class TimeConversion
     {
-        public static void Main(string[] args)
+        public static void TimeConversionMethod(string[] args)
         {
 
 
@@ -31,6 +31,7 @@ namespace CodingChallenge
             else if (string.Equals(amOrPm, "PM"))
             {
                 var numericHourComponent = int.Parse(hourComponent);
+                // if its 12 PM then no need to add 12.
                 if (numericHourComponent != 12)
                 {
                     hourComponent = Convert.ToString(numericHourComponent + 12);
